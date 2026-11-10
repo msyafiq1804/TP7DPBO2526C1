@@ -88,6 +88,19 @@ C. Tampilan dan Logika Proses (view/)
 D. Router Utama (index.php)
   - Terletak di root directory. File ini berfungsi sebagai entry point. Ketika pengguna membuka alamat proyek di browser, file ini akan merutekan (menggunakan header("Location: ...")) pengguna secara otomatis ke halaman view/makanan.php sebagai beranda utamanya.
 
+## Penjelasan Desain Tampilan Program
+
+Untuk desain tampilan, Web Rekomendasi Makanan Sehat Sekitar UPI dibuat dalam bentuk website dengan beberapa komponen antarmuka yang memiliki fungsi masing-masing.
+
+- **Navigasi** digunakan untuk berpindah dari satu halaman pengelolaan ke halaman lainnya, yaitu Menu Makanan, Kelola Kategori, dan Tempat Makan.
+- **Form input** bersifat dinamis, digunakan untuk memasukkan data baru maupun mengubah (update) data yang sudah tersedia secara otomatis tanpa berpindah halaman.
+- **Tabel data** digunakan untuk menampilkan daftar entitas (makanan, kategori, restoran) yang tersimpan di dalam database, lengkap dengan tombol aksi pada setiap barisnya.
+- **Tombol aksi** dibedakan berdasarkan warna untuk meminimalisir kesalahan pengguna (hijau untuk menyimpan data, oranye untuk mengubah data, dan merah untuk menghapus data).
+
+Tampilan website juga menggunakan CSS murni (Native) untuk mengatur warna, ukuran, tata letak bergaya *card layout*, efek interaktif (*hover* pada tabel), serta jenis font (Poppins) agar antarmuka terlihat modern dan rapi.
+
+Dengan adanya pembagian komponen tersebut, pengguna dapat mengelola data rekomendasi kuliner sehat melalui tampilan yang lebih terstruktur, minimalis, dan sangat mudah digunakan.
+
 ## Dokumentasi
 
 [Dokumentasi Di GDrive](https://drive.google.com/file/d/1aFXrRTy-p1ZDBgyXk8Qx1_OT5Caj4HEa/view?usp=drivesdk)
