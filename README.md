@@ -87,3 +87,7 @@ C. Tampilan dan Logika Proses (view/)
 
 D. Router Utama (index.php)
   - Terletak di root directory. File ini berfungsi sebagai entry point. Ketika pengguna membuka alamat proyek di browser, file ini akan merutekan (menggunakan header("Location: ...")) pengguna secara otomatis ke halaman view/makanan.php sebagai beranda utamanya.
+
+## Dokumentasi
+
+[Dokumentasi Di GDrive](https://drive.google.com/file/d/1aFXrRTy-p1ZDBgyXk8Qx1_OT5Caj4HEa/view?usp=drivesdk)
