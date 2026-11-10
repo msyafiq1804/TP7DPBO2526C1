@@ -79,13 +79,13 @@ Di dalam folder config, terdapat file inisiasi koneksi ke server MySQL. Koneksi 
     - update(): Mengeksekusi query UPDATE berdasarkan ID.
     - delete(): Mengeksekusi query DELETE berdasarkan ID.
 
-C. Tampilan dan Logika Proses (view/)
+- C. Tampilan dan Logika Proses (view/)
   - Folder view/ berisi antarmuka pengguna berbasis HTML/CSS yang dikombinasikan dengan logika pemrosesan PHP murni.
   - Modularitas UI: Elemen visual yang berulang seperti bagian atas web dan navigasi dipisah ke header.php, sedangkan bagian penutup dipisah ke footer.php.
   - Penerimaan Data (POST): Setiap halaman (kategori.php, restoran.php, makanan.php) mendeteksi keberadaan request ber-metode POST. Jika pengguna menekan tombol Tambah, Update, atau Hapus, PHP akan memanggil metode CRUD yang bersesuaian dari objek class, lalu melakukan redirect untuk menghindari resubmission form (mencegah data ganda saat halaman di-refresh).
   - Alur Update Data Dinamis (Tanpa JavaScript): Saat tombol "Update" pada tabel diklik, sistem melempar parameter ID ke URL melalui metode GET (contoh: makanan.php?edit=3). File PHP akan menangkap URL tersebut, mencari data terkait di memori, dan secara otomatis mengubah form "Tambah" menjadi form "Update" yang kolomnya sudah terisi data lama. Hal ini membuktikan bahwa fungsionalitas UI modern dapat dicapai secara murni menggunakan logika PHP Native.
 
-D. Router Utama (index.php)
+- D. Router Utama (index.php)
   - Terletak di root directory. File ini berfungsi sebagai entry point. Ketika pengguna membuka alamat proyek di browser, file ini akan merutekan (menggunakan header("Location: ...")) pengguna secara otomatis ke halaman view/makanan.php sebagai beranda utamanya.
 
 ## Penjelasan Desain Tampilan Program
